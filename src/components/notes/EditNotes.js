@@ -51,7 +51,7 @@ function EditNote() {
           title, content, date
         }
 
-        await axios.put(`/api/notes/${id}`, newNote, {
+        await axios.put(`https://notes-sldc.onrender.com/api/notes/${id}`, newNote, {
           headers: { Authorization: token }
         })
 
